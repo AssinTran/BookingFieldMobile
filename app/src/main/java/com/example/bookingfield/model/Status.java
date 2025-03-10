@@ -1,4 +1,8 @@
 package com.example.bookingfield.model;
 
-public class Status {
+public enum Status{
+    Pending,
+    Accepted,
+    Using,
+    Finish
 }

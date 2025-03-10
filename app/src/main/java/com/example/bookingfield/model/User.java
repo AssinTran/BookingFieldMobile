@@ -1,5 +1,9 @@
 package com.example.bookingfield.model;
 
+import android.util.JsonWriter;
+
+import org.json.JSONObject;
+
 public class User {
     private String Id;
     private String Name;
@@ -56,5 +60,22 @@ public class User {
 
     public void setEmail(String email) {
         Email = email;
+    }
+
+    @Override
+    public String toString() {
+        JSONObject json = new JSONObject();
+        try {
+            json.put("id",getId());
+            json.put("name",getName());
+            json.put("phone", getPhone());
+            json.put("password",getPassword());
+            json.put("email", getEmail());
+
+            return json.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "";
+        }
     }
 }
