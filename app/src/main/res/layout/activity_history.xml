@@ -54,7 +54,7 @@
         app:layout_constraintTop_toTopOf="@id/ptop"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="100dp"
