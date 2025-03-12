@@ -10,8 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.bookingfield.R;
 
-public class MainActivity extends AppCompatActivity {
-
+public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
