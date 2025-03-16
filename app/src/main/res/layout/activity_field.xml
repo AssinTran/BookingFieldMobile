@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/txtList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="293dp"
+        android:layout_height="64dp"
         android:layout_marginTop="136dp"
         android:fontFamily="@font/agbalumo"
         android:text="List of Fields"
@@ -21,12 +21,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="391dp"
-        android:layout_height="617dp"
-        android:layout_marginTop="224dp"
+        android:layout_width="392dp"
+        android:layout_height="545dp"
+        android:layout_marginTop="260dp"
         android:orientation="vertical"
         android:padding="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -77,6 +78,32 @@
         android:backgroundTint="@color/primary"
         android:fontFamily="@font/agbalumo"
         android:text="Cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="213dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="208dp"
+        android:background="@color/white"
+        android:textColor="@color/primary"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="208dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="@font/agbalumo"
+        android:text="Service"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
